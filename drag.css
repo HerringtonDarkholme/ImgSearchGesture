@@ -1,0 +1,87 @@
+div._drag_container{
+	position: absolute!important;
+}
+div._drag_button{
+	width: 0px!important;
+	height: 0px!important;
+	position: absolute!important;
+  	border-radius: 50px!important;
+  	border-right:50px solid rgba(100,100,100,0.8)!important;
+  	border-left:50px solid transparent!important;
+  	border-bottom:50px solid transparent!important;
+  	border-top: 50px solid transparent!important;
+  	z-index: 9998!important;
+  	-webkit-transition: all ease 0.1s;
+}
+
+div._drag_container p{
+	position: absolute!important;
+	color: #FFF!important;
+	text-shadow: #fff 0px 1px 5px!important;
+	z-index: 9999!important;
+	font-size: 16px!important;
+	margin: 0px!important;
+	padding: 0px!important;
+	-webkit-transition: all ease 0.1s;
+	font-family: "Segoe UI Light",Tahoma,arial,sans-serif!IMPORTANT;
+}
+
+div._drag_goo{
+  	-webkit-transform :rotate(-90deg)!important;
+  	top: 0px!important;
+  	left: 5px!important;
+}
+
+p._drag_goo{
+	left: 40px!important;
+	top: 10px!important;
+}
+
+
+div._drag_sauce{
+  	-webkit-transform :rotate(0deg)!important;
+  	top:5px!important;
+  	left: 10px!important;
+}
+
+p._drag_sauce{
+	left: 80px!important;
+	top:45px!important;
+}
+
+div._drag_iqdb{
+	-webkit-transform :rotate(180deg)!important;
+	top: 5px!important;
+	left: 0px!important;
+}
+
+p._drag_iqdb{
+	top: 45px!important;
+	left: 5px!important;
+}
+
+div._drag_bg{
+  	-webkit-transform :rotate(90deg)!important;
+  	top: 10px!important;
+  	left: 5px!important;
+}
+
+p._drag_bg{
+	left: 40px!important;
+	top:75px!important;	
+}
+
+span._drag_active>div._drag_button{
+	border-right:50px solid rgba(11,158,251,0.8)!important;
+	-webkit-transition: all ease 0.1s;
+}
+
+span._drag_active._drag_remote>div._drag_button{
+	border-right:50px solid rgba(0,185,0,0.8)!important;
+	-webkit-transition: all ease 0.1s;
+}
+
+span._drag_active>p{
+	text-shadow: #fff 0px 2px 5px!important;
+	-webkit-transition: all ease 0.1s;
+}

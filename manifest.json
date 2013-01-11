@@ -1,0 +1,19 @@
+{
+	"name":"drag_Search_pics",
+	"version":"1.0",
+	"manifest_version":2,
+	"description" : "search images by gesture",
+	"background": {
+		"scripts": ["background.js"]
+	},
+	"content_scripts":[
+	{
+		"matches": ["http://*/*","https://*/*"],
+		"js": ["dragsearch.js"],
+		"css": ["drag.css"]
+	}
+	],
+	"permissions": [
+	"tabs","http://*/*","https://*/*"
+	]
+}
